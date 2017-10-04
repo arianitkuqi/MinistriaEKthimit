@@ -1,5 +1,4 @@
-﻿using MinistriaEKthimit.Models.Messaging.Requests;
-using MinistriaEKthimit.Service.Contract;
+﻿using MinistriaEKthimit.Service.Contract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +19,7 @@ namespace MinistriaEKthimit.Controllers
 
         public string Index()
         {
-            return _personService.GetPerson(new PersonRequest(1, "test")).Company;
+            return _personService.DisplayAll();
   
         }
 
