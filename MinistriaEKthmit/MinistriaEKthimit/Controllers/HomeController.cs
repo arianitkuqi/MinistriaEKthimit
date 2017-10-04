@@ -8,9 +8,16 @@ namespace MinistriaEKthimit.Controllers
 {
     public class HomeController : Controller
     {
+        ITest tt;
+
+        public HomeController(ITest t)
+        {
+            tt = t;
+        }
         public ActionResult Index()
         {
             return View();
+  
         }
 
         public ActionResult About()
@@ -26,5 +33,15 @@ namespace MinistriaEKthimit.Controllers
 
             return View();
         }
+    }
+
+    public class test:ITest
+    {
+
+    }
+
+    public interface ITest
+    {
+
     }
 }
