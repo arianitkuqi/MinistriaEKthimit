@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Contract\" />
-    <Folder Include="Implementation\" />
   </ItemGroup>
 
 </Project>
