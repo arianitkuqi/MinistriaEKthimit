@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthmit", "MinistriaEKthmit\MinistriaEKthmit.csproj", "{28DF2FA8-867B-4C83-A9D9-0E484F4FA344}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{DF133B74-2551-4C6C-A675-B8A72EC70C2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Service", "MinistriaEKthimit.Service\MinistriaEKthimit.Service.csproj", "{90C83275-7C61-47CE-9B4F-9BF73DA8BCBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Models", "MinistriaEKthimit.Models\MinistriaEKthimit.Models.csproj", "{39ABE733-5CA2-4977-9B32-FAA9E934FD43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit", "MinistriaEKthimit\MinistriaEKthimit.csproj", "{507B0CE7-73F7-4531-A943-4AC6B7FB1990}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{28DF2FA8-867B-4C83-A9D9-0E484F4FA344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28DF2FA8-867B-4C83-A9D9-0E484F4FA344}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28DF2FA8-867B-4C83-A9D9-0E484F4FA344}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28DF2FA8-867B-4C83-A9D9-0E484F4FA344}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90C83275-7C61-47CE-9B4F-9BF73DA8BCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90C83275-7C61-47CE-9B4F-9BF73DA8BCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90C83275-7C61-47CE-9B4F-9BF73DA8BCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,6 +25,10 @@ Global
 		{39ABE733-5CA2-4977-9B32-FAA9E934FD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39ABE733-5CA2-4977-9B32-FAA9E934FD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39ABE733-5CA2-4977-9B32-FAA9E934FD43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

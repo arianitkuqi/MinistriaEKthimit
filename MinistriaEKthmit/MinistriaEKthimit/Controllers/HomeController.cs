@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MinistriaEKthmit.Controllers
+namespace MinistriaEKthimit.Controllers
 {
     public class HomeController : Controller
     {

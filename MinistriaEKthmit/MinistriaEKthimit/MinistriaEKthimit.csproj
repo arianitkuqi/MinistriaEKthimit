@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{28DF2FA8-867B-4C83-A9D9-0E484F4FA344}</ProjectGuid>
+    <ProjectGuid>{507B0CE7-73F7-4531-A943-4AC6B7FB1990}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MinistriaEKthmit</RootNamespace>
-    <AssemblyName>MinistriaEKthmit</AssemblyName>
+    <RootNamespace>MinistriaEKthimit</RootNamespace>
+    <AssemblyName>MinistriaEKthimit</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -229,9 +229,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>61337</DevelopmentServerPort>
+          <DevelopmentServerPort>61948</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61337/</IISUrl>
+          <IISUrl>http://localhost:61948/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

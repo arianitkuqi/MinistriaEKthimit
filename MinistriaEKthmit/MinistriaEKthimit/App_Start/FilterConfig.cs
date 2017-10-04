@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MinistriaEKthmit
+namespace MinistriaEKthimit
 {
     public class FilterConfig
     {

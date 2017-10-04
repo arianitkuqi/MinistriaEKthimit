@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MinistriaEKthmit")]
+[assembly: AssemblyTitle("MinistriaEKthimit")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MinistriaEKthmit")]
+[assembly: AssemblyProduct("MinistriaEKthimit")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fe0f6288-2f3d-497f-9f05-8ca52816c9b6")]
+[assembly: Guid("99681096-4ec7-46be-a094-a63af7422683")]
 
 // Version information for an assembly consists of the following four values:
 //
