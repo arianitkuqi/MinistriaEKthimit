@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MinistriaEKthimit.Models.Messaging.Requests;
+using MinistriaEKthimit.Service.Contract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,17 +10,17 @@ namespace MinistriaEKthimit.Controllers
 {
     public class HomeController : BaseController
     {
-        ITest _testService;
+        private readonly IPersonService _personService;
 
-        public HomeController(ITest testService)
+        public HomeController(IPersonService personService)
         {
-            _testService = testService;
+            _personService = personService;
         }
 
 
-        public ActionResult Index()
+        public string Index()
         {
-            return View();
+            return _personService.GetPerson(new PersonRequest(1, "test")).Company;
   
         }
 

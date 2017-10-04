@@ -8,9 +8,4 @@
     <ProjectReference Include="..\MinistriaEKthimit.Models\MinistriaEKthimit.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Contract\" />
-    <Folder Include="Implementation\" />
-  </ItemGroup>
-
 </Project>
