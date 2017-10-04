@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Users\" />
+    <Folder Include="Messaging\Responses\" />
+    <Folder Include="Messaging\Requests\" />
+    <Folder Include="POCO Models\" />
   </ItemGroup>
 
 </Project>

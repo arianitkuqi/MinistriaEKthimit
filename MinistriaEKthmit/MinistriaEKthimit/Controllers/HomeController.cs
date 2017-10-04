@@ -6,14 +6,16 @@ using System.Web.Mvc;
 
 namespace MinistriaEKthimit.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        ITest tt;
+        ITest _testService;
 
-        public HomeController(ITest t)
+        public HomeController(ITest testService)
         {
-            tt = t;
+            _testService = testService;
         }
+
+
         public ActionResult Index()
         {
             return View();

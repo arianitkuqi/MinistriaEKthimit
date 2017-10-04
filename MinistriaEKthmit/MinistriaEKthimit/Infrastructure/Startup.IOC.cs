@@ -26,7 +26,9 @@ namespace MinistriaEKthimit.Infrastructure
         {
             //Here you have to register Interfaces with corresponding Concrete Types
             //How to do:
-            // --> container.RegisterType<ITest, ConcreteTest>();
+            //----------------------------------------------------------------------
+            // ------->     container.RegisterType<ITest, ConcreteTest>();    <-----
+            //----------------------------------------------------------------------
 
 
             //Models
