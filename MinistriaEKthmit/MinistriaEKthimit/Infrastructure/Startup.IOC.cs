@@ -2,6 +2,7 @@
 using MinistriaEKthimit.Controllers;
 using MinistriaEKthimit.Service.Contract;
 using MinistriaEKthimit.Service.Implementation;
+using MinistriaEKthimit.Services.Implementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +40,7 @@ namespace MinistriaEKthimit.Infrastructure
 
 
             //Services
-            container.RegisterType<IPersonService, Test2>();
+            container.RegisterType<IPersonService, PersonService>();
 
 
 
