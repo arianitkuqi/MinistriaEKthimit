@@ -32,6 +32,7 @@ namespace MinistriaEKthimit.Controllers
             return View();
         }
 
+        [AuthorizeCustom]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

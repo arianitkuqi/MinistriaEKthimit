@@ -27,6 +27,13 @@ namespace MinistriaEKthimit.Controllers
             }
         }
 
+        public List<string> GetAuthorizations()
+        {
+            var Module = this.GetType().Name.ToString().Replace("Controller", "");
+
+            return Authorize.GetAuthorizations(CurrentUserName, Module);
+        }
+
 
         private ClaimsIdentity CurrentIdentity
         {
@@ -35,7 +42,5 @@ namespace MinistriaEKthimit.Controllers
                 return HttpContext.User.Identity as ClaimsIdentity;
             }
         }
-
-        
     }
 }

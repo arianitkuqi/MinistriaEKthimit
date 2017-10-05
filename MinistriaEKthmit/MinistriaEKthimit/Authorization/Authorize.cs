@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,12 +12,16 @@ namespace MinistriaEKthimit.Authorization
     {
         public static bool check(AuthorizationContext authctx)
         {
-            var request = authctx.HttpContext.Request;
-            var url = new UrlHelper(authctx.RequestContext);
-            var urlReferer = request.Url.PathAndQuery;
+            return GetAuthorizations(authctx.HttpContext.User.Identity.Name, authctx.HttpContext.Request.Url.AbsolutePath).Count > 0;
+        }
 
-            return true;
-        }        
+        public static List<string> GetAuthorizations(string userName, string module)
+        {
+
+            //Get list of access authorizations for specified module.
+            
+            return new List<string>(){ };
+        }
     }
 
     public class AuthorizeCustomAttribute : AuthorizeAttribute
@@ -31,29 +36,27 @@ namespace MinistriaEKthimit.Authorization
             var signInUrl = url.Action("Index", "SignIn", new { Area = "Account", ReturnUrl = urlReferer });
             var accessDeniedUrl = url.Action("PageAccessDenied", "Error", new { Area = "" });
             
-            if (!request.IsAuthenticated)
-            {
-                if (request.IsAjaxRequest())
-                {
-                    filterContext.Result =
-                        new JsonResult
-                        {
-                            Data = new { error = true, signinerror = true, message = "Sign in required", url = signInUrl },
-                            JsonRequestBehavior = JsonRequestBehavior.AllowGet
-                        };
-                }
-                else
-                {
-                    filterContext.Result = new RedirectResult(signInUrl);
-                }
+            //if (!request.IsAuthenticated)
+            //{
+            //    if (request.IsAjaxRequest())
+            //    {
+            //        filterContext.Result =
+            //            new JsonResult
+            //            {
+            //                Data = new { error = true, signinerror = true, message = "Sign in required", url = signInUrl },
+            //                JsonRequestBehavior = JsonRequestBehavior.AllowGet
+            //            };
+            //    }
+            //    else
+            //    {
+            //        filterContext.Result = new RedirectResult(signInUrl);
+            //    }
 
-            }
-            else
-            {
+            //}
+            //else
+            //{
               
-                
-
-                if (Authorize.check(filterContext))
+                if (!Authorize.check(filterContext))
                 {
                     if (request.IsAjaxRequest())
                     {
@@ -74,7 +77,7 @@ namespace MinistriaEKthimit.Authorization
                     }
                 }
 
-            }
+            //}
 
         }
     }
