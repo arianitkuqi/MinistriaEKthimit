@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MinistriaEKthimit.Services.Contract
+namespace MinistriaEKthimit.Messaging.Helpers
 {
-    public interface IPersonService
+    public interface IResultModel
     {
-        
     }
 }

@@ -1,5 +1,7 @@
 ﻿using MinistriaEKthimit.Authorization;
+using MinistriaEKthimit.Messaging.Requests;
 using MinistriaEKthimit.Services.Contract;
+using MinistriaEKthimit.Services.Implementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,20 +12,27 @@ namespace MinistriaEKthimit.Controllers
 {
     public class HomeController : BaseController
     {
-        private readonly IPersonService _personService;
 
-        public HomeController(IPersonService personService)
+        private readonly ICityService _cityService;
+        public HomeController(ICityService cityService)
         {
-            _personService = personService;
+            _cityService = cityService;
         }
 
 
         public string Index()
         {
+            var request = new CityRequest {
+                //Id = 18
+            };
+
+
+            var response = _cityService.GetCustomCity(request);
+
+            var res = response.Result;
 
             return "s";
-  
-        }
+          }
 
         public ActionResult About()
         {

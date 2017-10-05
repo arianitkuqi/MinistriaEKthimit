@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contract\IPersonService.cs" />
+    <Compile Include="Contract\ICityService.cs" />
     <Compile Include="Factory.cs" />
-    <Compile Include="Implementation\PersonService.cs" />
+    <Compile Include="Implementation\CityService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
