@@ -1,4 +1,5 @@
-﻿using MinistriaEKthimit.Service.Contract;
+﻿using MinistriaEKthimit.Authorization;
+using MinistriaEKthimit.Service.Contract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,8 @@ namespace MinistriaEKthimit.Controllers
 
         public string Index()
         {
+            checkAuthorization();
+
             return _personService.DisplayAll();
   
         }

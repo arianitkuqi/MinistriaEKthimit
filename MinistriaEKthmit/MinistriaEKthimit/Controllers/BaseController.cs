@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Security.Claims;
+using MinistriaEKthimit.Authorization;
 
 namespace MinistriaEKthimit.Controllers
 {
-    public class BaseController:Controller
+    public class BaseController : Controller
     {
+
         public string CurrentUserName
         {
             get
@@ -25,6 +27,10 @@ namespace MinistriaEKthimit.Controllers
             }
         }
 
+
+        public bool checkAuthorization(string action) => Authorize.Check( new AuthorizationContext(HttpContext);
+
+
         private ClaimsIdentity CurrentIdentity
         {
             get
@@ -32,5 +38,7 @@ namespace MinistriaEKthimit.Controllers
                 return HttpContext.User.Identity as ClaimsIdentity;
             }
         }
+
+        
     }
 }
