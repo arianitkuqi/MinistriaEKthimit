@@ -51,7 +51,7 @@
     <Compile Include="Helpers\ServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\CityRequest.cs" />
-    <Compile Include="Results\CityResultModel.cs" />
+    <Compile Include="Results\CityResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MinistriaEKthimit.Models\MinistriaEKthimit.Models.csproj">
