@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8299EB0F-90D9-4EAF-B193-DD3A46410C29}</ProjectGuid>
+    <ProjectGuid>{53796EC7-CE18-4A9D-95E3-CCF324D05F5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MinistriaEKthimit.Models</RootNamespace>
-    <AssemblyName>MinistriaEKthimit.Models</AssemblyName>
+    <RootNamespace>MinistriaEKthimit.Messaging</RootNamespace>
+    <AssemblyName>MinistriaEKthimit.Messaging</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FactoryAdapter">
+      <HintPath>..\MinistriaEKthimit\FactoryAdapter.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MinistriaEKthimit.Models\MinistriaEKthimit.Models.csproj">
+      <Project>{8299eb0f-90d9-4eaf-b193-dd3a46410c29}</Project>
+      <Name>MinistriaEKthimit.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
