@@ -1,3 +1,2 @@
 ﻿
-
-All Concrete Classes in order to be treated as a request parameter must implement interface IRequest
+ALL CONCRETE CLASSES; IN ORDER TO BE TREATED AS A REQUEST PARAMETER (for any particular method) MUST IMPLEMENT "IRequest" INTERFACE

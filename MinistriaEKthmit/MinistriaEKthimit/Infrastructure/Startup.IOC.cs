@@ -1,7 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using MinistriaEKthimit.Controllers;
-using MinistriaEKthimit.Service.Contract;
-using MinistriaEKthimit.Service.Implementation;
+using MinistriaEKthimit.Services.Contract;
 using MinistriaEKthimit.Services.Implementation;
 using System;
 using System.Collections.Generic;

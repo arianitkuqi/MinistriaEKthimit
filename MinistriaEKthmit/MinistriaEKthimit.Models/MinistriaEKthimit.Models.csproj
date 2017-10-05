@@ -46,7 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="POCO Models\" />
     <Folder Include="Responses\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>

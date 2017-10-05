@@ -12,8 +12,7 @@ namespace MinistriaEKthimit.Services.Implementation
         public void hh()
         {
             Factory.Perform.GetAll<Object>("usp_PersonRoles_GetAll");
-
-
+                    
             Factory.Perform.GetSingle<Object>("");
         }
     }
