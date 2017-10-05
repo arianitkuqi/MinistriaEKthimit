@@ -235,13 +235,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MinistriaEKthimit.Models\MinistriaEKthimit.Models.csproj">
-      <Project>{39abe733-5ca2-4977-9b32-faa9e934fd43}</Project>
-      <Name>MinistriaEKthimit.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MinistriaEKthimit.Service\MinistriaEKthimit.Service.csproj">
-      <Project>{90c83275-7c61-47ce-9b4f-9bf73da8bcba}</Project>
-      <Name>MinistriaEKthimit.Service</Name>
+    <ProjectReference Include="..\MinistriaEKthimit.Services\MinistriaEKthimit.Services.csproj">
+      <Project>{3A282F24-5328-467D-A69D-05A4A0D73CC3}</Project>
+      <Name>MinistriaEKthimit.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
