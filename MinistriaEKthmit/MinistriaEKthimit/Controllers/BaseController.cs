@@ -28,9 +28,6 @@ namespace MinistriaEKthimit.Controllers
         }
 
 
-        public bool checkAuthorization(string action) => Authorize.Check( new AuthorizationContext(HttpContext);
-
-
         private ClaimsIdentity CurrentIdentity
         {
             get
