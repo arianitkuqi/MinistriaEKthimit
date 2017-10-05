@@ -14,6 +14,6 @@ namespace MinistriaEKthimit.Messaging.Helpers
 
         public string Message { get; set; }
 
-        public IResultModel Result { get; set; }
+        public IResultModel Model { get; set; }
     }
 }

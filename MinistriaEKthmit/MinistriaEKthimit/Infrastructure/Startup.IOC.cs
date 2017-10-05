@@ -1,11 +1,13 @@
 ﻿using Microsoft.Practices.Unity;
 using MinistriaEKthimit.Controllers;
 using MinistriaEKthimit.Services.Contract;
+using MinistriaEKthimit.Services.Fake;
 using MinistriaEKthimit.Services.Implementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 
 namespace MinistriaEKthimit.Infrastructure
@@ -19,13 +21,15 @@ namespace MinistriaEKthimit.Infrastructure
             IUnityContainer unityContainer = new UnityContainer();
             RegisterServices(unityContainer);
 
-            DependencyResolver.SetResolver(new UnityResolver(unityContainer));
+            DependencyResolver.SetResolver(new Unity.Mvc4.UnityDependencyResolver(unityContainer));
+
+            GlobalConfiguration.Configuration.DependencyResolver = new Unity.WebApi.UnityDependencyResolver(unityContainer);
 
         }
         #endregion
 
-        private static void RegisterServices(IUnityContainer container)
-        {
+
+        private static void RegisterServices(IUnityContainer container){
             //Here you have to register Interfaces with corresponding Concrete Types
             //How to do:
             //----------------------------------------------------------------------
@@ -33,13 +37,13 @@ namespace MinistriaEKthimit.Infrastructure
             //----------------------------------------------------------------------
 
 
-            //Models
+            //Controllers
 
 
 
 
             //Services
-            container.RegisterType<IPersonService, PersonService>();
+            container.RegisterType<ICityService, FakeCityService>();
 
 
 

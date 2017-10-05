@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace MinistriaEKthimit.Messaging.Responses
 {
-    public class CityResultModel:IResultModel
+    public class CityResult:IResultModel
     {
+        public string Name { get; set; }
     }
 }

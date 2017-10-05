@@ -1,14 +1,25 @@
-﻿using System;
+﻿using MinistriaEKthimit.Messaging.Requests;
+using MinistriaEKthimit.Services.Contract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web.Helpers;
 using System.Web.Http;
+using System.Web.Http.Results;
 
 namespace MinistriaEKthimit.Controllers.ApiControllers
 {
     public class GetUsersController : ApiController
     {
+        private readonly ICityService _cityService;
+
+        public GetUsersController(ICityService cityService)
+        {
+            _cityService = cityService;
+        }
+
         // GET: api/GetUsers
         public IEnumerable<string> Get()
         {
@@ -16,9 +27,15 @@ namespace MinistriaEKthimit.Controllers.ApiControllers
         }
 
         // GET: api/GetUsers/5
-        public string Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            return "value";
+            var request = new CityRequest
+            {
+                //Id = 18
+            };
+            var response = _cityService.GetCustomCity(request);
+
+            return Json(response);
         }
 
         // POST: api/GetUsers

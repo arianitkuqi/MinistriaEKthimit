@@ -10,7 +10,7 @@ namespace MinistriaEKthimit.Messaging.Helpers
     {
         public virtual void SuccessfulResponse(IResponse response, IResultModel resultModel, string message = null)
         {
-            response.Result = new OkResult { Result = resultModel };
+            response.Result = new OkResult { Model = resultModel };
             if (!string.IsNullOrEmpty(message))
                 response.Result.Message = message;
         }

@@ -1,4 +1,5 @@
-﻿using MinistriaEKthimit.Infrastructure;
+﻿using MinistriaEKthimit.App_Start;
+using MinistriaEKthimit.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;

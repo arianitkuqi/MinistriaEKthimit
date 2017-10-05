@@ -1,5 +1,7 @@
 ﻿using MinistriaEKthimit.Authorization;
+using MinistriaEKthimit.Messaging.Helpers;
 using MinistriaEKthimit.Messaging.Requests;
+using MinistriaEKthimit.Messaging.Responses;
 using MinistriaEKthimit.Services.Contract;
 using MinistriaEKthimit.Services.Implementation;
 using System;
@@ -20,18 +22,11 @@ namespace MinistriaEKthimit.Controllers
         }
 
 
+        [HttpGet]
         public string Index()
         {
-            var request = new CityRequest {
-                //Id = 18
-            };
 
-
-            var response = _cityService.GetCustomCity(request);
-
-            var res = response.Result;
-
-            return "s";
+            return "It is working";
           }
 
         public ActionResult About()

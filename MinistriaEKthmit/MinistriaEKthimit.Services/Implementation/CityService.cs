@@ -15,7 +15,7 @@ namespace MinistriaEKthimit.Services.Implementation
         public ResponseBase GetCustomCity(CityRequest request)
         {
             var response = new ResponseBase();
-            var result = Factory.Perform.GetSingle<CityResultModel>("usp_City_GetCustom", request);
+            var result = Factory.Perform.GetSingle<CityResult>("usp_City_GetCustom", request);
 
             this.SuccessfulResponse(response, result);
             return response;
