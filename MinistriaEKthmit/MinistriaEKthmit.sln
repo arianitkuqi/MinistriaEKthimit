@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{DF133B74-2551-4C6C-A675-B8A72EC70C2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit", "MinistriaEKthimit\MinistriaEKthimit.csproj", "{507B0CE7-73F7-4531-A943-4AC6B7FB1990}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Models", "MinistriaEKthimit.Models\MinistriaEKthimit.Models.csproj", "{8299EB0F-90D9-4EAF-B193-DD3A46410C29}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Services", "MinistriaEKthimit.Services\MinistriaEKthimit.Services.csproj", "{3A282F24-5328-467D-A69D-05A4A0D73CC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Messaging", "MinistriaEKthimit.Messaging\MinistriaEKthimit.Messaging.csproj", "{53796EC7-CE18-4A9D-95E3-CCF324D05F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.UI", "MinistriaEKthimit.UI\MinistriaEKthimit.UI.csproj", "{1327E4FE-E8EF-44A4-8473-DEFE33ABC334}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{507B0CE7-73F7-4531-A943-4AC6B7FB1990}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8299EB0F-90D9-4EAF-B193-DD3A46410C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8299EB0F-90D9-4EAF-B193-DD3A46410C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8299EB0F-90D9-4EAF-B193-DD3A46410C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{53796EC7-CE18-4A9D-95E3-CCF324D05F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53796EC7-CE18-4A9D-95E3-CCF324D05F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53796EC7-CE18-4A9D-95E3-CCF324D05F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1327E4FE-E8EF-44A4-8473-DEFE33ABC334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1327E4FE-E8EF-44A4-8473-DEFE33ABC334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1327E4FE-E8EF-44A4-8473-DEFE33ABC334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1327E4FE-E8EF-44A4-8473-DEFE33ABC334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
