@@ -55,6 +55,7 @@ namespace MinistriaEKthimit.UI.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
+        [Route("api/login")]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -66,6 +67,7 @@ namespace MinistriaEKthimit.UI.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [Route("api/login")]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)

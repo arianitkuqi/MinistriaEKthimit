@@ -18,6 +18,11 @@ namespace MinistriaEKthimit.UI.Models
         }
     }
 
+    public class UserModel: ApplicationUser
+    {
+        public string Password { get; set; }
+    }
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
