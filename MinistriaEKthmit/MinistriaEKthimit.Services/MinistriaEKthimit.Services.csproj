@@ -43,11 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contract\IPersonService.cs" />
+    <Compile Include="Contract\ICityService.cs" />
     <Compile Include="Factory.cs" />
-    <Compile Include="Implementation\PersonService.cs" />
+    <Compile Include="Fake\FakeCityService.cs" />
+    <Compile Include="Implementation\CityService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MinistriaEKthimit.Messaging\MinistriaEKthimit.Messaging.csproj">
+      <Project>{53796ec7-ce18-4a9d-95e3-ccf324d05f5e}</Project>
+      <Name>MinistriaEKthimit.Messaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
