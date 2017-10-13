@@ -7,38 +7,82 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    <link href="~/Content/sidebar.css" rel="stylesheet" />
+    <style>
+    </style>
+
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+<body style="padding:0; margin:0">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+        </div>*@
+    <div class="container">
+        <div class="view-account">
+            <section class="module">
+                <div class="module-inner">
+                    <div class="side-bar">
+                        <div class="user-info">
+
+                            <img src="~/Content/images/logo.png" style="width:100%" />
+                            @*<ul class="meta list list-unstyled">
+                                    <li class="name">
+                                        Rebecca Sanders
+                                        <label class="label label-info">UX Designer</label>
+                                    </li>
+                                    <li class="email"><a href="#">Rebecca.S@website.com</a></li>
+                                    <li class="activity">Last logged in: Today at 2:18pm</li>
+                                </ul>*@
+                        </div>
+                        <nav class="side-menu">
+                            <ul class="nav">
+                                <li class="active"><a href="#"><span class="fa fa-user"></span> Lista e Aplikacioneve</a></li>
+                                <li><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
+                                <li><a href="#"><span class="fa fa-credit-card"></span> Billing</a></li>
+                                <li><a href="#"><span class="fa fa-envelope"></span> Messages</a></li>
+
+                                <li><a href="user-drive.html"><span class="fa fa-th"></span> Drive</a></li>
+                                <li><a href="#"><span class="fa fa-clock-o"></span> Paneli i Punetoreve</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="content-panel">
+                        
+                        <div class="drive-wrapper">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script>
+
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+        })
+    </script>
 </body>
 </html>

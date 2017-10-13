@@ -1,0 +1,264 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    body {
+        margin-top: 50px;
+    }
+
+    .nav-tabs .glyphicon:not(.no-margin) {
+        margin-right: 10px;
+    }
+
+    .tab-pane .list-group-item:first-child {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .tab-pane .list-group-item:last-child {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .tab-pane .list-group .checkbox {
+        display: inline-block;
+        margin: 0px;
+    }
+
+    .tab-pane .list-group input[type="checkbox"] {
+        margin-top: 2px;
+    }
+
+    .tab-pane .list-group .glyphicon {
+        margin-right: 5px;
+    }
+
+        .tab-pane .list-group .glyphicon:hover {
+            color: #FFBC00;
+        }
+
+    a.list-group-item.read {
+        color: #222;
+        background-color: #F3F3F3;
+    }
+
+    hr {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .nav-pills > li > a {
+        padding: 5px 10px;
+    }
+
+    .ad {
+        padding: 5px;
+        background: #F5F5F5;
+        color: #222;
+        font-size: 80%;
+        border: 1px solid #E5E5E5;
+    }
+
+        .ad a.title {
+            color: #15C;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 110%;
+        }
+
+        .ad a.url {
+            color: #093;
+            text-decoration: none;
+        }
+</style>
+
+<div style="background:#F5F5F5; padding:15px; padding-bottom:0;">
+    <div class=" content-header-wrapper">
+        <h2 class="title">LISTA E APLIKACIONEVE</h2>
+        <div class="actions">
+            <button class="btn btn-primary" style="" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i> Add New Application</button>
+        </div>
+    </div>
+    <div class="content-utilities">
+        <div class="actions">
+            <div class="btn-group">
+                <input type="text" value="" class="form-control" placeholder="Search Here" />
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="false">All Items <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-file"></i> Documents</a></li>
+                    <li><a href="#"><i class="fa fa-file-image-o"></i> Images</a></li>
+                    <li><a href="#"><i class="fa fa-file-video-o"></i> Media Files</a></li>
+                    <li><a href="#"><i class="fa fa-folder"></i> Folders</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="false"><i class="fa fa-filter"></i> Sorting <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Newest first</a></li>
+                    <li><a href="#">Oldest first</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="col-xs-12" style="margin-top:0; padding: 0px 20px;">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#home" data-toggle="tab">
+                <span class="glyphicon glyphicon-inbox">
+                </span>Primary
+            </a>
+        </li>
+        <li>
+            <a href="#profile" data-toggle="tab">
+                <span class="glyphicon glyphicon-user"></span>
+                Social
+            </a>
+        </li>
+        <li>
+            <a href="#messages" data-toggle="tab">
+                <span class="glyphicon glyphicon-tags"></span>
+                Promotions
+            </a>
+        </li>
+        <li>
+            <a href="#settings" data-toggle="tab">
+                <span class="glyphicon glyphicon-plus no-margin">
+                </span>
+            </a>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <span class="glyphicon glyphicon-star-empty"></span><span class="name label label-info" style="min-width: 120px;
+                                display: inline-block;">Andres posada</span> <span class="">Nice work on the lastest version</span>
+                    <span class="text-muted" style="font-size: 11px;">- More content here</span> <span class="badge">12:10 AM</span> <span class="pull-right">
+                        <span class="glyphicon glyphicon-paperclip">
+                        </span>
+                    </span>
+                </a><a href="#" class="list-group-item">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <span class="glyphicon glyphicon-star-empty"></span><span class="name  label label-success" style="min-width: 120px;
+                                    display: inline-block;">Juan acosta</span> <span class="">This is big title</span>
+                    <span class="text-muted" style="font-size: 11px;">- I saw that you had..</span> <span class="badge">12:09 AM</span> <span class="pull-right">
+                        <span class="glyphicon glyphicon-paperclip">
+                        </span>
+                    </span>
+                </a><a href="#" class="list-group-item read">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <span class="glyphicon glyphicon-star"></span><span class="name  label label-warning" style="min-width: 120px;
+                                            display: inline-block;">Mariana jaramillo</span> <span class="">This is big title</span>
+                    <span class="text-muted" style="font-size: 11px;">- Hi hello how r u ?</span> <span class="badge">11:30 PM</span> <span class="pull-right">
+                        <span class="glyphicon glyphicon-paperclip">
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="tab-pane fade in" id="profile">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <span class="text-center">This tab is empty.</span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade in" id="messages">
+            ...
+        </div>
+        <div class="tab-pane fade in" id="settings">
+            This tab is empty.
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade " role="dialog" >
+    <div class="modal-dialog" >
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title"><strong>Register New Application</strong></h3>
+            </div>
+            <div class="modal-body" >
+                @{Html.RenderPartial("RegisterNew");}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section scripts{
+@Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+        $(document).ready(function () {
+            var navListItems = $('div.setup-panel div a'),
+                allWells = $('.setup-content'),
+                allNextBtn = $('.nextBtn');
+
+            allWells.hide();
+
+            navListItems.click(function (e) {
+                e.preventDefault();
+                var $target = $($(this).attr('href')),
+                    $item = $(this);
+
+                if (!$item.hasClass('disabled')) {
+                    navListItems.removeClass('btn-danger').addClass('btn-default');
+                    $item.addClass('btn-danger');
+                    allWells.hide();
+                    $target.show();
+                    $target.find('input:eq(0)').focus();
+                }
+            });
+
+            allNextBtn.click(function () {
+                var curStep = $(this).closest(".setup-content"),
+                    curStepBtn = curStep.attr("id"),
+                    nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                    curInputs = curStep.find("input[type='text'],input[type='url']"),
+                    isValid = true;
+
+                $(".form-group").removeClass("has-error");
+                for (var i = 0; i < curInputs.length; i++) {
+                    if (!curInputs[i].validity.valid) {
+                        isValid = false;
+                        $(curInputs[i]).closest(".form-group").addClass("has-error");
+                    }
+                }
+
+                if (isValid)
+                    nextStepWizard.removeAttr('disabled').trigger('click');
+            });
+
+            $('div.setup-panel div a.btn-danger').trigger('click');
+        });
+    </script>
+}

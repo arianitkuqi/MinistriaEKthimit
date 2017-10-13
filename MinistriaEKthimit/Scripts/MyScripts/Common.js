@@ -14,13 +14,14 @@
                 sessionStorage.setItem('accessToken', response.acces_token)
                 console.log(response)
             }
-        })
+        });
     })();
 
     return {
         Authenticate: this.requestToken
     }
 
-})()
+})();
+
 
 

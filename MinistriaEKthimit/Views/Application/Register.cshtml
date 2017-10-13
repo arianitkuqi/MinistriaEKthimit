@@ -3,126 +3,148 @@
     ViewBag.Title = "Register";
 }
 
-<style type="text/css">
-    #regiration_form fieldset:not(:first-of-type) {
-        display: none;
+
+
+<style>
+    body {
+        margin-top: 40px;
+    }
+
+    .stepwizard-step p {
+        margin-top: 10px;
+    }
+
+    .stepwizard-row {
+        display: table-row;
+    }
+
+    .stepwizard {
+        display: table;
+        width: 100%;
+        position: relative;
+    }
+
+    .stepwizard-step button[disabled] {
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+    }
+
+    .stepwizard-row:before {
+        top: 14px;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+        z-order: 0;
+    }
+
+    .stepwizard-step {
+        display: table-cell;
+        text-align: center;
+        position: relative;
+    }
+
+    .btn-circle {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.428571429;
+        border-radius: 15px;
+    }
+    input, select, textarea{
+        max-width:none;
     }
 </style>
 
 
+<div style="background:#F5F5F5; padding:15px; padding-bottom:0;">
+    <div class=" content-header-wrapper">
+        <h2 class="title">LISTA E APLIKACIONEVE</h2>
+        <div class="actions">
+            <button class="btn btn-primary" style=""><i class="fa fa-plus"></i> Add New Application</button>
+        </div>
+    </div>
+    <div class="content-utilities">
+        <div class="actions">
+            <div class="btn-group">
+                <input type="text" value="" class="form-control" placeholder="Search Here"/>
+            </div>
 
-<div class="progress" style="margin-top:5vh">
-    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="false">All Items <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-file"></i> Documents</a></li>
+                    <li><a href="#"><i class="fa fa-file-image-o"></i> Images</a></li>
+                    <li><a href="#"><i class="fa fa-file-video-o"></i> Media Files</a></li>
+                    <li><a href="#"><i class="fa fa-folder"></i> Folders</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="false"><i class="fa fa-filter"></i> Sorting <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Newest first</a></li>
+                    <li><a href="#">Oldest first</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
 </div>
-<div class="alert alert-success hide"></div>
-<form id="regiration_form" novalidate>
-    <fieldset class="col-md-12">
-        <h2>Step 1: Create your account</h2>
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
-        <div class="form-group col-md-6">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        </div>
+        
 
 
-        <input type="button" name="password" class="next btn btn-info" value="Next" />
-
-    </fieldset>
-    <fieldset>
-        <h2> Step 2: Add Personnel Details</h2>
-        <div class="form-group">
-            <label for="fName">First Name</label>
-            <input type="text" class="form-control" name="fName" id="fName" placeholder="First Name">
-        </div>
-        <div class="form-group">
-            <label for="lName">Last Name</label>
-            <input type="text" class="form-control" name="lName" id="lName" placeholder="Last Name">
-        </div>
-        <input type="button" name="previous" class="previous btn btn-default" value="Previous" />
-        <input type="button" name="next" class="next btn btn-info" value="Next" />
-    </fieldset>
-    <fieldset>
-        <h2>Step 3: Contact Information</h2>
-        <div class="form-group">
-            <label for="mob">Mobile Number</label>
-            <input type="text" class="form-control" id="mob" placeholder="Mobile Number">
-        </div>
-        <div class="form-group">
-            <label for="address">Address</label>
-            <textarea class="form-control" name="address" placeholder="Communication Address"></textarea>
-        </div>
-        <input type="button" name="previous" class="previous btn btn-default" value="Previous" />
-        <input type="submit" name="submit" class="submit btn btn-success" value="Submit" />
-    </fieldset>
-</form>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    
     <script>
-        $(function () {
-            var current = 0, current_step, next_step, steps;
-            steps = $("fieldset").length;
-            $(".next").click(function () {
-                current_step = $(this).parent();
-                next_step = $(this).parent().next();
-                next_step.show();
-                current_step.hide();
-                setProgressBar(++current);
+        jQuery(document).ready(function () {
+            var navListItems = $('div.setup-panel div a'),
+                allWells = $('.setup-content'),
+                allNextBtn = $('.nextBtn');
+
+            allWells.hide();
+
+            navListItems.click(function (e) {
+                e.preventDefault();
+                var $target = $($(this).attr('href')),
+                    $item = $(this);
+
+                if (!$item.hasClass('disabled')) {
+                    navListItems.removeClass('btn-primary').addClass('btn-default');
+                    $item.addClass('btn-primary');
+                    allWells.hide();
+                    $target.show();
+                    $target.find('input:eq(0)').focus();
+                }
             });
-            $(".previous").click(function () {
-                current_step = $(this).parent();
-                next_step = $(this).parent().prev();
-                next_step.show();
-                current_step.hide();
-                setProgressBar(--current);
+
+            allNextBtn.click(function () {
+                var curStep = $(this).closest(".setup-content"),
+                    curStepBtn = curStep.attr("id"),
+                    nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                    curInputs = curStep.find("input[type='text'],input[type='url']"),
+                    isValid = true;
+
+                jQuery(".form-group").removeClass("has-error");
+                for (var i = 0; i < curInputs.length; i++) {
+                    if (!curInputs[i].validity.valid) {
+                        isValid = false;
+                        $(curInputs[i]).closest(".form-group").addClass("has-error");
+                    }
+                }
+
+                if (isValid)
+                    nextStepWizard.removeAttr('disabled').trigger('click');
             });
-            setProgressBar(current);
-            // Change progress bar action
-            function setProgressBar(curStep) {
-                var percent = parseFloat(100 / steps) * curStep;
-                percent = percent.toFixed();
-                $(".progress-bar")
-                    .css("width", percent + "%")
-                    .html(percent + "%");
-            }
-    });
+
+            $('div.setup-panel div a.btn-primary').trigger('click');
+        });
     </script>
+   
 }
