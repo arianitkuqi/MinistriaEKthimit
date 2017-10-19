@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit", "MinistriaEKthimit\MinistriaEKthimit.csproj", "{EB0B79CA-DA2D-4B40-A847-38D8B329AA41}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{1B96DB9F-4D23-4269-8E1E-09714EB7E0B5}"
-	ProjectSection(SolutionItems) = preProject
-		packages\FactoryAdapter.dll = packages\FactoryAdapter.dll
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Services", "MinistriaEKthimit.Services\MinistriaEKthimit.Services.csproj", "{BB31B5D6-3627-4DA5-B2B9-6E9A61DC770C}"
 EndProject
