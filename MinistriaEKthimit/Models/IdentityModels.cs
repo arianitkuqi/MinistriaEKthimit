@@ -21,7 +21,7 @@ namespace MinistriaEKthimit.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("MinistriaKthimit", throwIfV1Schema: false)
         {
         }
 
