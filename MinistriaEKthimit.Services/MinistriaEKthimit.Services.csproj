@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FactoryAdapter">
-      <HintPath>..\packages\FactoryAdapter\FactoryAdapter.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +49,10 @@
     <Folder Include="Fake\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FactoryAdapter\FactoryAdapter\FactoryAdapter.csproj">
+      <Project>{6056bfad-0e1b-4cdd-96f5-a623628289d9}</Project>
+      <Name>FactoryAdapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MinistriaEKthimit.Messaging\MinistriaEKthimit.Messaging.csproj">
       <Project>{8fd2245b-c022-46ac-a9f1-face14beb722}</Project>
       <Name>MinistriaEKthimit.Messaging</Name>

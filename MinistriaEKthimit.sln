@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Models", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Messaging", "MinistriaEKthimit.Messaging\MinistriaEKthimit.Messaging.csproj", "{8FD2245B-C022-46AC-A9F1-FACE14BEB722}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryAdapter", "FactoryAdapter\FactoryAdapter\FactoryAdapter.csproj", "{6056BFAD-0E1B-4CDD-96F5-A623628289D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{D118F651-2FD4-41C0-861A-85F9B562C84A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{8FD2245B-C022-46AC-A9F1-FACE14BEB722}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FD2245B-C022-46AC-A9F1-FACE14BEB722}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FD2245B-C022-46AC-A9F1-FACE14BEB722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6056BFAD-0E1B-4CDD-96F5-A623628289D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6056BFAD-0E1B-4CDD-96F5-A623628289D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6056BFAD-0E1B-4CDD-96F5-A623628289D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6056BFAD-0E1B-4CDD-96F5-A623628289D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +51,8 @@ Global
 		{BB31B5D6-3627-4DA5-B2B9-6E9A61DC770C} = {1B96DB9F-4D23-4269-8E1E-09714EB7E0B5}
 		{E0AC4C7B-2BC6-4E6B-ADEE-BF50CF2406CA} = {1B96DB9F-4D23-4269-8E1E-09714EB7E0B5}
 		{8FD2245B-C022-46AC-A9F1-FACE14BEB722} = {1B96DB9F-4D23-4269-8E1E-09714EB7E0B5}
+		{6056BFAD-0E1B-4CDD-96F5-A623628289D9} = {D118F651-2FD4-41C0-861A-85F9B562C84A}
+		{D118F651-2FD4-41C0-861A-85F9B562C84A} = {1B96DB9F-4D23-4269-8E1E-09714EB7E0B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E55B46A-E8CC-4426-8299-3C4B914DE428}
