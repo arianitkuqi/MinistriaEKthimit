@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Services"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Models", "MinistriaEKthimit.Models\MinistriaEKthimit.Models.csproj", "{E0AC4C7B-2BC6-4E6B-ADEE-BF50CF2406CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Messaging", "MinistriaEKthimit.Messaging\MinistriaEKthimit.Messaging.csproj", "{8FD2245B-C022-46AC-A9F1-FACE14BEB722}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinistriaEKthimit.Services.Messaging", "MinistriaEKthimit.Messaging\MinistriaEKthimit.Services.Messaging.csproj", "{8FD2245B-C022-46AC-A9F1-FACE14BEB722}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryAdapter", "FactoryAdapter\FactoryAdapter\FactoryAdapter.csproj", "{6056BFAD-0E1B-4CDD-96F5-A623628289D9}"
 EndProject

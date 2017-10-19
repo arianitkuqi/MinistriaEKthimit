@@ -10,7 +10,8 @@ namespace FactoryAdapter.Implementation
 {
     internal class MappingPerformer : IMappingContract
     {
-        public T MapObject<T>(IRetriveData data) where T : class, new() {
+        public T MapObject<T>(IRetriveData data) where T : class, new()
+        {
             T obj = new T();
             while (data.Read())
                 MapValues(data, typeof(T).GetProperties(), obj);
@@ -18,10 +19,12 @@ namespace FactoryAdapter.Implementation
         }
 
 
-        public List<T> MapList<T>(IRetriveData data) where T : class, new() {
+        public List<T> MapList<T>(IRetriveData data) where T : class, new()
+        {
             var list = new List<T>();
 
-            while (data.Read()) {
+            while (data.Read())
+            {
                 var item = new T();
                 MapValues(data, typeof(T).GetProperties(), item);
                 list.Add(item);
@@ -31,27 +34,31 @@ namespace FactoryAdapter.Implementation
 
 
         #region Method Helpers
-        private void MapValues<T>(IRetriveData data, PropertyInfo[] properties, T obj) {
+        private void MapValues<T>(IRetriveData data, PropertyInfo[] properties, T obj)
+        {
 
-            foreach (PropertyInfo property in properties) {
-                if (GetType(property) == "System.Int32")
-                    property.SetValue(obj, data.GetAsInt(property.Name));
+            if ((object)obj != DBNull.Value)
+                foreach (PropertyInfo property in properties)
+                {
+                    if (GetType(property) == "System.Int32")
+                        property.SetValue(obj, data.GetAsInt(property.Name));
 
-                if (GetType(property) == "System.String")
-                    property.SetValue(obj, data.GetAsString(property.Name));
+                    if (GetType(property) == "System.String")
+                        property.SetValue(obj, data.GetAsString(property.Name));
 
-                if (GetType(property) == "System.Decimal")
-                    property.SetValue(obj, data.GetAsDecimal(property.Name));
+                    if (GetType(property) == "System.Decimal")
+                        property.SetValue(obj, data.GetAsDecimal(property.Name));
 
-                if (GetType(property) == "System.Double")
-                    property.SetValue(obj, data.GetAsDouble(property.Name));
+                    if (GetType(property) == "System.Double")
+                        property.SetValue(obj, data.GetAsDouble(property.Name));
 
-                if (GetType(property) == "System.DateTime")
-                    property.SetValue(obj, data.GetAsDate(property.Name));
-            }
+                    if (GetType(property) == "System.DateTime")
+                        property.SetValue(obj, data.GetAsDate(property.Name));
+                }
         }
 
-        private string GetType(PropertyInfo property) {
+        private string GetType(PropertyInfo property)
+        {
             return property.PropertyType.ToString();
         }
 

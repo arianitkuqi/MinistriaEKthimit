@@ -53,9 +53,9 @@
       <Project>{6056bfad-0e1b-4cdd-96f5-a623628289d9}</Project>
       <Name>FactoryAdapter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MinistriaEKthimit.Messaging\MinistriaEKthimit.Messaging.csproj">
+    <ProjectReference Include="..\MinistriaEKthimit.Messaging\MinistriaEKthimit.Services.Messaging.csproj">
       <Project>{8fd2245b-c022-46ac-a9f1-face14beb722}</Project>
-      <Name>MinistriaEKthimit.Messaging</Name>
+      <Name>MinistriaEKthimit.Services.Messaging</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
